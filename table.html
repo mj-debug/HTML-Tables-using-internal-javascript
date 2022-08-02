@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLES</title>
+    <style type="text/css">
+        body{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: #FFFFFF;
+            background-color: #252C39;
+        }
+        h2{
+            font-size: 40px;
+
+            /* Fallback: Set a background color. */
+            background-color: red;
+  
+            /* Create the gradient. */
+            background-image: linear-gradient(to right, #FEAA69, #7B56C9);
+  
+            /* Set the background size and repeat properties. */
+            background-size: 100%;
+            background-repeat: repeat;
+
+            /* Use the text as a mask for the background. */
+            /* This will show the gradient as a text color rather than element bg. */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+        table{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Student Report Sheet</h2>
+    <table border="2" style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr>
+           <th>S/N</th>
+           <th>Name</th>
+           <th>Math</th>
+           <th>Eng</th>
+           <th>Phy</th>
+           <th>Chem</th>
+           <th>Bio</th>
+           <th>Geo</th>
+           <th>Econs</th>
+           <th>Total</th>
+           <th>Average</th>
+        </tr>
+        <!-- Student One Score Sheet -->
+        <tr>
+            <td>1</td>
+            <td id="first_student_name"></td>
+            <td id="math_score_1"></td>
+            <td id="eng_score_1"></td>
+            <td id="phy_score_1"></td>
+            <td id="chem_score_1"></td>
+            <td id="bio_score_1"></td>
+            <td id="geo_score_1"></td>
+            <td id="econs_score_1"></td>
+            <td id="first_student_total_score"></td>
+            <td id="first_student_average_score"></td>
+        </tr>
+        <!-- Student Two Score Sheet -->
+        <tr>
+            <td>2</td>
+            <td id="second_student_name"></td>
+            <td id="math_score_2"></td>
+            <td id="eng_score_2"></td>
+            <td id="phy_score_2"></td>
+            <td id="chem_score_2"></td>
+            <td id="bio_score_2"></td>
+            <td id="geo_score_2"></td>
+            <td id="econs_score_2"></td>
+            <td id="second_student_total_score"></td>
+            <td id="second_student_average_score"></td>
+        </tr>
+        <!-- Student Three Score Sheet -->
+        <tr>
+            <td>3</td>
+            <td id="third_student_name"></td>
+            <td id="math_score_3"></td>
+            <td id="eng_score_3"></td>
+            <td id="phy_score_3"></td>
+            <td id="chem_score_3"></td>
+            <td id="bio_score_3"></td>
+            <td id="geo_score_3"></td>
+            <td id="econs_score_3"></td>
+            <td id="third_student_total_score"></td>
+            <td id="third_student_average_score"></td>
+        </tr>
+        <!-- Student four Score Sheet -->
+        <tr>
+            <td>4</td>
+            <td id="fourth_student_name"></td>
+            <td id="math_score_4"></td>
+            <td id="eng_score_4"></td>
+            <td id="phy_score_4"></td>
+            <td id="chem_score_4"></td>
+            <td id="bio_score_4"></td>
+            <td id="geo_score_4"></td>
+            <td id="econs_score_4"></td>
+            <td id="fourth_student_total_score"></td>
+            <td id="fourth_student_average_score"></td>
+        </tr>
+        <!-- Student five Score Sheet -->
+        <tr>
+            <td>5</td>
+            <td id="fifth_student_name"></td>
+            <td id="math_score_5"></td>
+            <td id="eng_score_5"></td>
+            <td id="phy_score_5"></td>
+            <td id="chem_score_5"></td>
+            <td id="bio_score_5"></td>
+            <td id="geo_score_5"></td>
+            <td id="econs_score_5"></td>
+            <td id="fifth_student_total_score"></td>
+            <td id="fifth_student_average_score"></td>
+        </tr>
+        <!-- Student Six Score Sheet -->
+        <tr>
+            <td>6</td>
+            <td id="sixth_student_name"></td>
+            <td id="math_score_6"></td>
+            <td id="eng_score_6"></td>
+            <td id="phy_score_6"></td>
+            <td id="chem_score_6"></td>
+            <td id="bio_score_6"></td>
+            <td id="geo_score_6"></td>
+            <td id="econs_score_6"></td>
+            <td id="sixth_student_total_score"></td>
+            <td id="sixth_student_average_score"></td>
+        </tr>
+        <!-- Student Seven Score Sheet -->
+         <tr>
+            <td>7</td>
+            <td id="seventh_student_name"></td>
+            <td id="math_score_7"></td>
+            <td id="eng_score_7"></td>
+            <td id="phy_score_7"></td>
+            <td id="chem_score_7"></td>
+            <td id="bio_score_7"></td>
+            <td id="geo_score_7"></td>
+            <td id="econs_score_7"></td>
+            <td id="seventh_student_total_score"></td>
+            <td id="seventh_student_average_score"></td>
+        </tr>
+        <!-- Student Eigth Score Sheet -->
+        <tr>
+            <td>8</td>
+            <td id="eigth_student_name"></td>
+            <td id="math_score_8"></td>
+            <td id="eng_score_8"></td>
+            <td id="phy_score_8"></td>
+            <td id="chem_score_8"></td>
+            <td id="bio_score_8"></td>
+            <td id="geo_score_8"></td>
+            <td id="econs_score_8"></td>
+            <td id="eigth_student_total_score"></td>
+            <td id="eigth_student_average_score"></td>
+        </tr>
+        <!-- Student Nine Score Sheet -->
+        <tr>
+            <td>9</td>
+            <td id="ninth_student_name"></td>
+            <td id="math_score_9"></td>
+            <td id="eng_score_9"></td>
+            <td id="phy_score_9"></td>
+            <td id="chem_score_9"></td>
+            <td id="bio_score_9"></td>
+            <td id="geo_score_9"></td>
+            <td id="econs_score_9"></td>
+            <td id="ninth_student_total_score"></td>
+            <td id="ninth_student_average_score"></td>
+        </tr>
+        <!-- Student Ten Score Sheet -->
+         <tr>
+            <td>10</td>
+            <td id="tenth_student_name"></td>
+            <td id="math_score_10"></td>
+            <td id="eng_score_10"></td>
+            <td id="phy_score_10"></td>
+            <td id="chem_score_10"></td>
+            <td id="bio_score_10"></td>
+            <td id="geo_score_10"></td>
+            <td id="econs_score_10"></td>
+            <td id="tenth_student_total_score"></td>
+            <td id="tenth_student_average_score"></td>
+        </tr>
+    </table>
+
+    <script>
+
+        // Student One Score Sheet begins
+        let first_student_name = "Joshua";
+        let first_student_math_score = 89;
+        let first_student_eng_score = 78;
+        let first_student_phy_score = 57;
+        let first_student_chem_score = 99;
+        let first_student_bio_score = 56;
+        let first_student_geo_score = 82;
+        let first_student_econs_score = 76;
+        let first_student_total_score = first_student_math_score + first_student_eng_score + first_student_phy_score + first_student_chem_score + first_student_bio_score + first_student_geo_score + first_student_econs_score;
+        let first_student_average_score = first_student_total_score / 7;
+
+        document.getElementById('first_student_name').innerHTML = first_student_name;
+        document.getElementById('math_score_1').innerHTML = first_student_math_score;
+        document.getElementById('eng_score_1').innerHTML = first_student_eng_score;
+        document.getElementById('phy_score_1').innerHTML = first_student_phy_score;
+        document.getElementById('chem_score_1').innerHTML = first_student_chem_score;
+        document.getElementById('bio_score_1').innerHTML = first_student_bio_score;
+        document.getElementById('geo_score_1').innerHTML = first_student_geo_score;
+        document.getElementById('econs_score_1').innerHTML = first_student_econs_score;
+        document.getElementById('first_student_total_score').innerHTML = first_student_total_score;
+        document.getElementById('first_student_average_score').innerHTML = first_student_average_score;
+         // Student One Score Sheet ends
+
+        // Student Two Score Sheet begins
+        let second_student_name = "Kazeem";
+        let second_student_math_score = 78;
+        let second_student_eng_score = 55;
+        let second_student_phy_score = 66;
+        let second_student_chem_score = 89;
+        let second_student_bio_score = 92;
+        let second_student_geo_score = 77;
+        let second_student_econs_score = 59;
+        let second_student_total_score = second_student_eng_score + second_student_math_score + second_student_phy_score + second_student_chem_score + second_student_bio_score + second_student_geo_score + second_student_econs_score;
+        let second_student_average_score = second_student_total_score / 7;
+
+        document.getElementById('second_student_name').innerHTML = second_student_name;
+        document.getElementById('math_score_2').innerHTML = second_student_math_score;
+        document.getElementById('eng_score_2').innerHTML = second_student_eng_score;
+        document.getElementById('phy_score_2').innerHTML = second_student_phy_score;
+        document.getElementById('chem_score_2').innerHTML = second_student_chem_score;
+        document.getElementById('bio_score_2').innerHTML = second_student_bio_score;
+        document.getElementById('geo_score_2').innerHTML = second_student_geo_score;
+        document.getElementById('econs_score_2').innerHTML = second_student_econs_score;
+        document.getElementById('second_student_total_score').innerHTML = second_student_total_score;
+        document.getElementById('second_student_average_score').innerHTML = second_student_average_score;
+        // Student Two Score Sheet ends
+
+        // Student Three Score Sheet begins
+        let third_student_name = "Juliet";
+        let third_student_math_score = 45;
+        let third_student_eng_score = 29;
+        let third_student_phy_score = 78;
+        let third_student_chem_score = 87;
+        let third_student_bio_score = 99;
+        let third_student_geo_score = 67;
+        let third_student_econs_score = 98;
+        let third_student_total_score = third_student_math_score + third_student_eng_score + third_student_phy_score + third_student_chem_score + third_student_bio_score + third_student_geo_score + third_student_econs_score;
+        let third_student_average_score = third_student_total_score / 7;
+
+        document.getElementById('third_student_name').innerHTML = third_student_name;
+        document.getElementById('math_score_3').innerHTML = third_student_math_score;
+        document.getElementById('eng_score_3').innerHTML = third_student_eng_score;
+        document.getElementById('phy_score_3').innerHTML = third_student_phy_score;
+        document.getElementById('chem_score_3').innerHTML = third_student_chem_score;
+        document.getElementById('bio_score_3').innerHTML = third_student_bio_score;
+        document.getElementById('geo_score_3').innerHTML = third_student_geo_score;
+        document.getElementById('econs_score_3').innerHTML = third_student_econs_score;
+        document.getElementById('third_student_total_score').innerHTML = third_student_total_score;
+        document.getElementById('third_student_average_score').innerHTML = third_student_average_score;
+        // Student Three Score Sheet ends
+
+
+        // Student Four Score Sheet begins
+        let fourth_student_name = "Zev";
+        let fourth_student_math_score = 44;
+        let fourth_student_eng_score = 73;
+        let fourth_student_phy_score = 79;
+        let fourth_student_chem_score = 100;
+        let fourth_student_bio_score = 89;
+        let fourth_student_geo_score = 50;
+        let fourth_student_econs_score = 75;
+        let fourth_student_total_score = fourth_student_math_score + fourth_student_eng_score + fourth_student_phy_score +  fourth_student_chem_score + fourth_student_bio_score + fourth_student_geo_score + fourth_student_econs_score;
+        let fourth_student_average_score = fourth_student_total_score / 7;
+
+        document.getElementById('fourth_student_name').innerHTML = fourth_student_name;
+        document.getElementById('math_score_4').innerHTML = fourth_student_math_score;
+        document.getElementById('eng_score_4').innerHTML = fourth_student_eng_score;
+        document.getElementById('phy_score_4').innerHTML = fourth_student_phy_score;
+        document.getElementById('chem_score_4').innerHTML = fourth_student_chem_score;
+        document.getElementById('bio_score_4').innerHTML = fourth_student_bio_score;
+        document.getElementById('geo_score_4').innerHTML = fourth_student_geo_score;
+        document.getElementById('econs_score_4').innerHTML = fourth_student_econs_score;
+        document.getElementById('fourth_student_total_score').innerHTML = fourth_student_total_score;
+        document.getElementById('fourth_student_average_score').innerHTML = fourth_student_average_score;
+        // Student Four Score Sheet ends
+
+
+        // Student Five Score Sheet begins
+        let fifth_student_name = "Somto";
+        let fifth_student_math_score = 40;
+        let fifth_student_eng_score = 50;
+        let fifth_student_phy_score = 70;
+        let fifth_student_chem_score = 80;
+        let fifth_student_bio_score = 88;
+        let fifth_student_geo_score = 55;
+        let fifth_student_econs_score = 77;
+        let fifth_student_total_score = fifth_student_math_score + fifth_student_eng_score + fifth_student_phy_score + fifth_student_chem_score + fifth_student_bio_score + fifth_student_geo_score + fifth_student_econs_score;
+        let fifth_student_average_score = fifth_student_total_score / 7;
+
+        document.getElementById('fifth_student_name').innerHTML = fifth_student_name;
+        document.getElementById('math_score_5').innerHTML = fifth_student_math_score;
+        document.getElementById('eng_score_5').innerHTML = fifth_student_eng_score;
+        document.getElementById('phy_score_5').innerHTML = fifth_student_phy_score;
+        document.getElementById('chem_score_5').innerHTML = fifth_student_chem_score;
+        document.getElementById('bio_score_5').innerHTML = fifth_student_bio_score;
+        document.getElementById('geo_score_5').innerHTML = fifth_student_geo_score;
+        document.getElementById('econs_score_5').innerHTML = fifth_student_econs_score;
+        document.getElementById('fifth_student_total_score').innerHTML = fifth_student_total_score;
+        document.getElementById('fifth_student_average_score').innerHTML = fifth_student_average_score;
+        // Student Five Score Sheet ends
+
+
+        // Student Six Score Sheet begins
+        let sixth_student_name = "Tobi";
+        let sixth_student_math_score = 45;
+        let sixth_student_eng_score = 55;
+        let sixth_student_phy_score = 75;
+        let sixth_student_chem_score = 85;
+        let sixth_student_bio_score = 75;
+        let sixth_student_geo_score = 55;
+        let sixth_student_econs_score = 35;
+        let sixth_student_total_score = sixth_student_math_score + sixth_student_eng_score + sixth_student_phy_score + sixth_student_chem_score + sixth_student_bio_score + sixth_student_geo_score + sixth_student_econs_score;
+        let sixth_student_average_score = sixth_student_total_score / 7;
+
+        document.getElementById('sixth_student_name').innerHTML = sixth_student_name;
+        document.getElementById('math_score_6').innerHTML = sixth_student_math_score;
+        document.getElementById('eng_score_6').innerHTML = sixth_student_eng_score;
+        document.getElementById('phy_score_6').innerHTML = sixth_student_phy_score;
+        document.getElementById('chem_score_6').innerHTML = sixth_student_chem_score;
+        document.getElementById('bio_score_6').innerHTML = sixth_student_bio_score;
+        document.getElementById('geo_score_6').innerHTML = sixth_student_geo_score;
+        document.getElementById('econs_score_6').innerHTML = sixth_student_econs_score;
+        document.getElementById('sixth_student_total_score').innerHTML = sixth_student_total_score;
+        document.getElementById('sixth_student_average_score').innerHTML = sixth_student_average_score;
+        // Student Sixth Score Sheet ends
+
+
+        // Student Seven Score Sheet begins
+        let seventh_student_name = "Amusan";
+        let seventh_student_math_score = 39;
+        let seventh_student_eng_score = 35;
+        let seventh_student_phy_score = 75;
+        let seventh_student_chem_score = 89;
+        let seventh_student_bio_score = 79;
+        let seventh_student_geo_score = 85;
+        let seventh_student_econs_score = 95;
+        let seventh_student_total_score = seventh_student_math_score + seventh_student_eng_score + seventh_student_phy_score + seventh_student_chem_score + seventh_student_bio_score + seventh_student_geo_score + seventh_student_econs_score;
+        let seventh_student_average_score = seventh_student_total_score / 7;
+
+        document.getElementById('seventh_student_name').innerHTML = seventh_student_name;
+        document.getElementById('math_score_7').innerHTML = seventh_student_math_score;
+        document.getElementById('eng_score_7').innerHTML = seventh_student_eng_score;
+        document.getElementById('phy_score_7').innerHTML = seventh_student_phy_score;
+        document.getElementById('chem_score_7').innerHTML = seventh_student_chem_score;
+        document.getElementById('bio_score_7').innerHTML = seventh_student_bio_score;
+        document.getElementById('geo_score_7').innerHTML = seventh_student_geo_score;
+        document.getElementById('econs_score_7').innerHTML = seventh_student_econs_score;
+        document.getElementById('seventh_student_total_score').innerHTML = seventh_student_total_score;
+        document.getElementById('seventh_student_average_score').innerHTML = seventh_student_average_score;
+        // Student Seven Sheet ends
+
+
+        // Student Eigth Score Sheet begins
+        let eigth_student_name = "Juanita";
+        let eigth_student_math_score = 29;
+        let eigth_student_eng_score = 37;
+        let eigth_student_phy_score = 72;
+        let eigth_student_chem_score = 80;
+        let eigth_student_bio_score = 55;
+        let eigth_student_geo_score = 89;
+        let eigth_student_econs_score = 100;
+        let eigth_student_total_score = eigth_student_math_score + eigth_student_eng_score + eigth_student_phy_score + eigth_student_chem_score + eigth_student_bio_score + eigth_student_geo_score + eigth_student_econs_score;
+        let eigth_student_average_score = eigth_student_total_score / 7;
+
+        document.getElementById('eigth_student_name').innerHTML = eigth_student_name;
+        document.getElementById('math_score_8').innerHTML = eigth_student_math_score;
+        document.getElementById('eng_score_8').innerHTML = eigth_student_eng_score;
+        document.getElementById('phy_score_8').innerHTML = eigth_student_phy_score;
+        document.getElementById('chem_score_8').innerHTML = eigth_student_chem_score;
+        document.getElementById('bio_score_8').innerHTML = eigth_student_bio_score;
+        document.getElementById('geo_score_8').innerHTML = eigth_student_geo_score;
+        document.getElementById('econs_score_8').innerHTML = eigth_student_econs_score;
+        document.getElementById('eigth_student_total_score').innerHTML = eigth_student_total_score;
+        document.getElementById('eigth_student_average_score').innerHTML = eigth_student_average_score;
+        // Student Eigth Score Sheet ends
+
+
+         // Student Nine Score Sheet begins
+        let ninth_student_name = "Matthew";
+        let ninth_student_math_score = 69;
+        let ninth_student_eng_score = 55;
+        let ninth_student_phy_score = 35;
+        let ninth_student_chem_score = 49;
+        let ninth_student_bio_score = 69;
+        let ninth_student_geo_score = 65;
+        let ninth_student_econs_score = 85;
+        let ninth_student_total_score = ninth_student_math_score + ninth_student_eng_score + ninth_student_phy_score + ninth_student_chem_score + ninth_student_bio_score + ninth_student_geo_score + ninth_student_econs_score;
+        let ninth_student_average_score = ninth_student_total_score / 7;
+
+        document.getElementById('ninth_student_name').innerHTML = ninth_student_name;
+        document.getElementById('math_score_9').innerHTML = ninth_student_math_score;
+        document.getElementById('eng_score_9').innerHTML = ninth_student_eng_score;
+        document.getElementById('phy_score_9').innerHTML = ninth_student_phy_score;
+        document.getElementById('chem_score_9').innerHTML = ninth_student_chem_score;
+        document.getElementById('bio_score_9').innerHTML = ninth_student_bio_score;
+        document.getElementById('geo_score_9').innerHTML = ninth_student_geo_score;
+        document.getElementById('econs_score_9').innerHTML = ninth_student_econs_score;
+        document.getElementById('ninth_student_total_score').innerHTML = ninth_student_total_score;
+        document.getElementById('ninth_student_average_score').innerHTML = ninth_student_average_score;
+        // Student Nine Score Sheet ends
+
+
+
+        // Student Ten Score Sheet begins
+        let tenth_student_name = "Esosa";
+        let tenth_student_math_score = 49;
+        let tenth_student_eng_score = 59;
+        let tenth_student_phy_score = 22;
+        let tenth_student_chem_score = 79;
+        let tenth_student_bio_score = 99;
+        let tenth_student_geo_score = 45;
+        let tenth_student_econs_score = 85;
+        let tenth_student_total_score = tenth_student_math_score + tenth_student_eng_score + tenth_student_phy_score + tenth_student_chem_score + tenth_student_bio_score + tenth_student_geo_score + tenth_student_econs_score;
+        let tenth_student_average_score = tenth_student_total_score / 7;
+
+        document.getElementById('tenth_student_name').innerHTML = tenth_student_name;
+        document.getElementById('math_score_10').innerHTML = tenth_student_math_score;
+        document.getElementById('eng_score_10').innerHTML = tenth_student_eng_score;
+        document.getElementById('phy_score_10').innerHTML = tenth_student_phy_score;
+        document.getElementById('chem_score_10').innerHTML = tenth_student_chem_score;
+        document.getElementById('bio_score_10').innerHTML = tenth_student_bio_score;
+        document.getElementById('geo_score_10').innerHTML = tenth_student_geo_score;
+        document.getElementById('econs_score_10').innerHTML = tenth_student_econs_score;
+        document.getElementById('tenth_student_total_score').innerHTML = tenth_student_total_score;
+        document.getElementById('tenth_student_average_score').innerHTML = tenth_student_average_score;
+        // Student Ten Score Sheet ends
+        
+    </script>
+
+
+</body>
+</html>
